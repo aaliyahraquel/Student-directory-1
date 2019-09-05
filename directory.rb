@@ -25,7 +25,9 @@ end
 def print(students)
   students.each_with_index do |student, i|
     i += 1
+    if "#{student[:name][0]}" == "t"
     puts "#{i} #{student[:name]} (#{student[:cohort]} cohort)"
+    end
   end
 end
 
